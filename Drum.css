@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  background-image: url(./drum.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+kbd {
+  color: gray;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: -1;
+}
+span {
+  color: purple;
+  z-index: -1;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 3px white;
+  transition: 0.07s;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  -webkit-transition: 0.07s;
+  -moz-transition: 0.07s;
+  -ms-transition: 0.07s;
+  -o-transition: 0.07s;
+}
+.key.active {
+  border-color: blueviolet;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
